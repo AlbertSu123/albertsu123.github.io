@@ -1,6 +1,6 @@
 projects:
   url: /projects
-  heading: Projects
+  heading: Blog
   words: A list of projects and experiments
   class: m7 projects
   border: projects
@@ -12,7 +12,7 @@ about:
   border: about
 resume:
   url: /resume
-  heading: Resume
+  heading: Photography
   words: Check out or download my resume
   class: m6 algorithms
   border: algorithms
