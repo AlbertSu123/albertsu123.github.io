@@ -4,7 +4,7 @@ function clearFilters(){
   $('.card').show();
 }
 
-function showContactForm(){
+function showPhotographyForm(){
 
 }
 
