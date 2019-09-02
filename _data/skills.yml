@@ -6,6 +6,7 @@
       skill_name: CSS3
     - class: jquery-plain
       skill_name: jQuery
+    - class: highcharts-plain
       skill_name: Highcharts
       
 
@@ -15,6 +16,7 @@
       skill_name: JavaScript
     - class: python-plain
       skill_name: Python
+    - class: java-plain
       skill_name: Java
 
 - name: frontend frameworks
@@ -28,4 +30,5 @@
       skill_name: Git
     - class: github-plain
       skill_name: GitHub
+    - class: agile-plain
       skill_name: Agile
