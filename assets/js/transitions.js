@@ -39,7 +39,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
     //   left: "-20px"
     // });
 
-    // $(".contact-border").css({
+    // $(".Photography-border").css({
     //   top: "-10px",
     //   left: "-20px"
     // });
@@ -86,7 +86,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
     });
 
     var pro4 = new Promise((resolve, reject) => {
-      $(".contact-border").animate(
+      $(".Photography-border").animate(
         {
           height: "100%"
         },
@@ -102,8 +102,8 @@ var HideShowTransition = Barba.BaseTransition.extend({
       // This line below fixes a weird bug that only happens on one page ...
       $(".top-row").css("background-color", "transparent");
 
-      var contactWidth = $(".contact").width(),
-        contactHeight = $(".contact").height(),
+      var PhotographyWidth = $(".Photography").width(),
+        PhotographyHeight = $(".Photography").height(),
         projectsWidth = $(".projects").width(),
         projectsHeight = $(".projects").height(),
         algorithmsWidth = $(".algorithms").width(),
@@ -121,11 +121,11 @@ var HideShowTransition = Barba.BaseTransition.extend({
           400
         );
       $(this.oldContainer)
-        .find(".contact")
+        .find(".Photography")
         .animate(
           {
-            left: "+=" + contactWidth + "px",
-            top: "+=" + contactHeight + "px"
+            left: "+=" + PhotographyWidth + "px",
+            top: "+=" + PhotographyHeight + "px"
           },
           400
         );
@@ -160,7 +160,7 @@ var HideShowTransition = Barba.BaseTransition.extend({
               .find(".algorithms")
               .finish();
             $(this.oldContainer)
-              .find(".contact")
+              .find(".Photography")
               .finish();
             $(".my-borders").finish();
             $("html").css("overflow-y", "visible");
@@ -186,19 +186,19 @@ var FadeTransition = Barba.BaseTransition.extend({
           width: "1px"
         });
         $(".about-border").css({ height: "100%" });
-        $(".contact-border").css({ height: "100%" });
+        $(".Photography-border").css({ height: "100%" });
         $(".projects-border").css({ width: "100%" });
         $(".algorithms-border").css({ width: "100%" });
-        var contactXPos = $(".contact").position().left,
-          contactYPos = $(".contact").position().top,
+        var PhotographyXPos = $(".Photography").position().left,
+          PhotographyYPos = $(".Photography").position().top,
           projectsXPos = $(".projects").position().left,
           projectsYPos = $(".projects").position().top,
           algorithmsXPos = $(".algorithms").position().left,
           algorithmsYPos = $(".algorithms").position().top,
           aboutXPos = $(".about").position().left,
           aboutYPos = $(".about").position().top;
-        (contactWidth = $(".contact").width()),
-          (contactHeight = $(".contact").height()),
+        (PhotographyWidth = $(".Photography").width()),
+          (PhotographyHeight = $(".Photography").height()),
           (projectsWidth = $(".projects").width()),
           (projectsHeight = $(".projects").height()),
           (algorithmsWidth = $(".algorithms").width()),
@@ -213,10 +213,10 @@ var FadeTransition = Barba.BaseTransition.extend({
             top: "-=" + aboutHeight + "px"
           });
         $(this.newContainer)
-          .find(".contact")
+          .find(".Photography")
           .css({
-            left: "+=" + contactWidth + "px",
-            top: "+=" + contactHeight + "px"
+            left: "+=" + PhotographyWidth + "px",
+            top: "+=" + PhotographyHeight + "px"
           });
         $(this.newContainer)
           .find(".projects")
@@ -248,11 +248,11 @@ var FadeTransition = Barba.BaseTransition.extend({
         });
         var pro2 = new Promise((resolve, reject) => {
           $(this.newContainer)
-            .find(".contact")
+            .find(".Photography")
             .animate(
               {
-                left: "-=" + contactWidth + "px",
-                top: "-=" + contactHeight + "px"
+                left: "-=" + PhotographyWidth + "px",
+                top: "-=" + PhotographyHeight + "px"
               },
               400,
               function() {
@@ -311,7 +311,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           //   left: "-20px"
           // });
 
-          // $(".contact-border").css({
+          // $(".Photography-border").css({
           //   left: "-20px",
           //   top: "-10px"
           // });
@@ -356,7 +356,7 @@ var FadeTransition = Barba.BaseTransition.extend({
           });
 
           var proBorder4 = new Promise((resolve, reject) => {
-            $(".contact-border").animate(
+            $(".Photography-border").animate(
               {
                 height: "0%"
               },
