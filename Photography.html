@@ -1,0 +1,226 @@
+---
+layout: not_homepage
+quote: Email, instant messaging, and cell phones give us fabulous communication ability, but because we live and work in our own little worlds, communication is totally disorganized.
+author: Marilyn vos Savant
+---
+
+{% include quote.html quote=page.quote author=page.author %}
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <script>
+        filterSelection("all") // Execute the function and show all columns
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+        }
+
+        /* Center website */
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 8px -16px;
+        }
+
+            /* Add padding BETWEEN each column (if you want) */
+            /*.row,
+            .row > .column {
+                padding: 8px;
+            }*/
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none; /* Hide columns by default */
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* The "show" class is added to the filtered elements */
+        .show {
+            display: block;
+        }
+
+        /* Style the buttons */
+        .btn {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+            /* Add a grey background color on mouse-over */
+            .btn:hover {
+                background-color: #ddd;
+            }
+
+            /* Add a dark background color to the active button */
+            .btn.active {
+                background-color: #666;
+                color: white;
+            }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>PORTFOLIO</h2>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('bw')">Black and White</button>
+        <button class="btn" onclick="filterSelection('Red')"> Red</button>
+        <button class="btn" onclick="filterSelection('Orange')"> Orange</button>
+        <button class="btn" onclick="filterSelection('Green')"> Green</button>
+        <button class="btn" onclick="filterSelection('Blue')"> Blue</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column bw">
+            <div class="content">
+                <img src="assets/images/Photography/bw/BWLakeClouds.jpg" alt="Comely Clouds" style="width:100%">
+                <h4>Comely Clouds</h4>
+                <p>Lake Tahoe, Nevada</p>
+            </div>
+        </div>
+        <div class="column bw">
+            <div class="content">
+                <img src="assets/images/Photography/bw/BWPortraitSihoulette.jpg" alt="Lights" style="width:100%">
+                <h4>Silhouette</h4>
+                <p>Westmoor High School, Daly City</p>
+            </div>
+        </div>
+        <div class="column bw">
+            <div class="content">
+                <img src="assets/images/Photography/bw/BWSoccerHandShot.jpg" alt="Nature" style="width:100%">
+                <h4>Strike</h4>
+                <p>Kevin Moran Park, Saratoga</p>
+            </div>
+        </div>
+
+        <div class="column Red">
+            <div class="content">
+                <img src="assets/images/Photography/Red/DisneyFireworks.jpg" alt="Car" style="width:100%">
+                <h4>Fireworks</h4>
+                <p>Disney World, Orlando</p>
+            </div>
+        </div>
+
+        <div class="column Red">
+            <div class="content">
+                <img src="assets/images/Photography/Red/MistySunrise.jpg" alt="Car" style="width:100%">
+                <h4>Misty Sunrise</h4>
+                <p>Lake Tahoe, Nevada</p>
+            </div>
+        </div>
+        <div class="column Red">
+            <div class="content">
+                <img src="assets/images/Photography/Red/LakeSunset.jpg" alt="Car" style="width:100%">
+                <h4>Sunset</h4>
+                <p>Lake Tahoe, Nevada</p>
+            </div>
+        </div>
+
+        <div class="column Orange">
+            <div class="content">
+                <img src="assets/images/Photography/Orange/DisneySandwichSign.jpg" alt="Car" style="width:100%">
+                <h4>Duke of Earl's</h4>
+                <p>Disney World, Orlando</p>
+            </div>
+        </div>
+        <div class="column Orange">
+            <div class="content">
+                <img src="assets/images/Photography/Orange/DisneyFireworksChaos.jpg" alt="People" style="width:100%">
+                <h4>Chaos</h4>
+                <p>Disney World, Orlando</p>
+            </div>
+        </div>
+        <div class="column Orange">
+            <div class="content">
+                <img src="assets/images/Photography/Orange/HawaiiNightBeach.jpg" alt="People" style="width:100%">
+                <h4>Beach at Night</h4>
+                <p>Waikiki, Honolulu</p>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </div>
+</body>
+</html>
