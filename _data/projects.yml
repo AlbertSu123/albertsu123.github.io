@@ -6,7 +6,7 @@
   technologies: [
                   java-plain
                 ]
-  cover: /assets/images/project_covers/hack-overflow-cover.png
+  cover: /assets/images/project_images/c2.png
 - id: 3
   title: Amazon Alexa skills
   url: https://github.com/AlbertSu123/AlexaSkills
@@ -15,10 +15,8 @@
   technologies: [
                   javascript-plain
                 ]
-  cover: /assets/images/project_covers/hack-overflow-cover.png
-  images: [
-    '/assets/images/project_covers/hack-overflow-cover.png'
-  ]
+  cover: /assets/images/project_images/amazon_echo_dot_thumb_1.jpg
+  
 - id: 4
   title: Javascript Spellchecker-IN PROGRESS
   url: https://github.com/AlbertSu123/haasneuroeconresearch
@@ -29,11 +27,8 @@
                   css3-plain-wordmark,
                   javascript-plain
                 ]
-  cover: /assets/images/project_covers/shoot-things-game-cover.png
-  images: [
-    '/assets/images/project_covers/shoot-things-game-cover.png'
-  ]
-  
+  cover: /assets/images/project_images/download.jpg
+
 - id: 5
   title: Fitting HARs slope using exponential and linear fit for Charge Detection Mass Spectrometry-IN PROGRESS
   url: https://github.com/IonbyIon/CDMS-Data-Processing
@@ -42,7 +37,4 @@
   technologies: [
                   python-plain
                 ]
-  cover: /assets/images/project_covers/shoot-things-game-cover.png
-  images: [
-    '/assets/images/project_covers/shoot-things-game-cover.png'
-  ]
+  cover: /assets/images/project_images/LBNLLogo.gif
