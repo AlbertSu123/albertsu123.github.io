@@ -3,6 +3,9 @@
   url: https://youtu.be/3_TD9jhN_pg
   github_url: https://github.com/AlbertSu123/var
   description: We are on a mission to make refereeing in soccer cheaper and more accurate. We used tensorflow and OpenCV to detect fouls, goals, handballs, etc. We built this on a mobile app so that the different users could form a collective refereeing system and transmit decisions to a central referee's device.
+  technologies: [
+                  javascript-plain
+                ]
   cover: /assets/images/project_images/c2.png
   
 - id: 3
