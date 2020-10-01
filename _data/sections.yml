@@ -1,3 +1,9 @@
+projects:
+  url: /projects
+  heading: Me
+  words: Some non-academic projects
+  class: m5 about
+  border: about
 about:
   url: /about
   heading: Me
