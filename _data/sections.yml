@@ -1,9 +1,9 @@
 projects:
   url: /projects
-  heading: Me
+  heading: Projects
   words: Some non-academic projects
-  class: m5 about
-  border: about
+  class: m7 projects	
+  border: projects
 about:
   url: /about
   heading: Me
