@@ -30,22 +30,3 @@
                 ]
   cover: /assets/images/project_images/download.jpg
 
-- id: 5
-  title: Fitting HARs slope using exponential and linear fit for Charge Detection Mass Spectrometry-IN PROGRESS
-  url: https://github.com/IonbyIon/CDMS-Data-Processing
-  github_url: https://github.com/IonbyIon/CDMS-Data-Processing
-  description: A script that fits a model of charge ions for UC Berkeley's Williams research group. I am rewriting a labview file as a python script. 
-  technologies: [
-                  python-plain
-                ]
-  cover: /assets/images/project_images/LBNLLogo.gif
-  
-  - id: 6
-  title: Advanced Connect 4
-  url: https://github.com/AlbertSu123/AdvancedConnect4
-  github_url: https://github.com/AlbertSu123/AdvancedConnect4
-  description: A connect 4 computer player that uses logic to beat the player
-  technologies: [
-                  java-plain
-                ]
-  cover: /assets/images/project_images/c2.png
